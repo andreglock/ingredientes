@@ -76,7 +76,7 @@ def parse_pao_de_acucar_product_with_or_without_ingredients(link_to_product):
     if (product_title == 'Pão de Açúcar'):
         return
 
-    categoriesHTML = indexed_page.find_all("div", {"class":"jSDikk"})
+    categoriesHTML = indexed_page.find_all("div", {"class":"innwdk"})
     categories = "["
     for i in range(1, len(categoriesHTML)):
         categories = categories + '"{}", '.format(categoriesHTML[i].getText())
